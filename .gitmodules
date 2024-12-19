@@ -1,3 +1,6 @@
 [submodule "CronoEngine/vendor/spdlog"]
 	path = CronoEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "CronoEngine/vendor/GLFW"]
+	path = CronoEngine/vendor/GLFW
+	url = https://github.com/glfw/glfw

@@ -13,11 +13,14 @@
     <Filter Include="Crono\Events">
       <UniqueIdentifier>{0A61AB95-F6C3-3A3A-9F49-73F08B8B06BD}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Crono\Platform">
-      <UniqueIdentifier>{FAD225CA-E6A0-19D0-CF34-8AF6BBA1F534}</UniqueIdentifier>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Crono\Platform\Win32">
-      <UniqueIdentifier>{5CDE1EF8-486D-A8C1-F18B-BCBCDDF9B867}</UniqueIdentifier>
+    <Filter Include="Platform\Linux">
+      <UniqueIdentifier>{C9310D94-B5FF-009A-9E93-71C08A00DDFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Win32">
+      <UniqueIdentifier>{8C36D494-7804-C89A-6198-38C14D05A4FF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +43,9 @@
     <ClInclude Include="src\Crono\Core\PlatformDetection.h">
       <Filter>Crono\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Crono\Core\Window.h">
+      <Filter>Crono\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Crono\Events\ApplicationEvent.h">
       <Filter>Crono\Events</Filter>
     </ClInclude>
@@ -52,6 +58,9 @@
     <ClInclude Include="src\Crono\Events\MouseEvent.h">
       <Filter>Crono\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Win32\Win32Window.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
     <ClInclude Include="src\crpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -61,8 +70,17 @@
     <ClCompile Include="src\Crono\Core\Log.cpp">
       <Filter>Crono\Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\Crono\Platform\Win32\Win32EntryPoint.cpp">
-      <Filter>Crono\Platform\Win32</Filter>
+    <ClCompile Include="src\Crono\Core\Window.cpp">
+      <Filter>Crono\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Linux\LinuxEntryPoint.cpp">
+      <Filter>Platform\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Win32\Win32EntryPoint.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Win32\Win32Window.cpp">
+      <Filter>Platform\Win32</Filter>
     </ClCompile>
     <ClCompile Include="src\crpch.cpp" />
   </ItemGroup>

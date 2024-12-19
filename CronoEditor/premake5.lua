@@ -27,7 +27,9 @@ project "CronoEditor"
 
         links
         {
-            "CronoEngine"
+            "CronoEngine",
+            "glfw3.lib",
+            "opengl32.lib"
         }
 
         filter "system:windows"

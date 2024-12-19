@@ -1,6 +1,6 @@
 // Copyright 2024 CronoGames
 #include "EditorApp.h"
-#include "Crono/Platform/Win32/Win32EntryPoint.cpp"
+#include "Platform/Win32/Win32EntryPoint.cpp"
 
 namespace CEditor
 {

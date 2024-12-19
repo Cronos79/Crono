@@ -24,12 +24,14 @@ project "CronoEngine"
         includedirs
 	    {
 		    "%{wks.location}/%{prj.name}/src",
-            "%{wks.location}/CronoEngine/vendor/spdlog/include"
+            "%{wks.location}/CronoEngine/vendor/spdlog/include",
+            "%{IncludeDir.GLFW}",
         }
 
         links
         {
-
+            "glfw3.lib",
+            "opengl32.lib"
         }
 
         filter "system:windows"

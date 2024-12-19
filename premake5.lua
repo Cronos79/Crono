@@ -1,3 +1,5 @@
+include "Dependencies.lua"
+
 workspace "Crono"
         architecture "x86_64"
         startproject "CronoEditor"
@@ -24,4 +26,6 @@ workspace "Crono"
         group ""
 
         group "Engine"
-            include "CronoEngine"   
+            include "CronoEngine"
+
+        group ""
