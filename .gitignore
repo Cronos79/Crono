@@ -27,6 +27,8 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
+[Bb]in-int/
+[Bb]uild/
 [Oo]bj/
 [Ll]og/
 
@@ -347,3 +349,5 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+
+*.exe

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Crono">
+      <UniqueIdentifier>{E6D3FB0C-52E8-23BE-1B6A-C71D873D20EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crono\Application">
+      <UniqueIdentifier>{A91870C2-152F-6E58-5EA6-F979CAFB3EE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crono\Core">
+      <UniqueIdentifier>{FE5753AE-EA0F-95FB-5317-6E573FEE2FEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crono\Platform">
+      <UniqueIdentifier>{FAD225CA-E6A0-19D0-CF34-8AF6BBA1F534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crono\Platform\Win32">
+      <UniqueIdentifier>{5CDE1EF8-486D-A8C1-F18B-BCBCDDF9B867}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Crono.h" />
+    <ClInclude Include="src\Crono\Application\Application.h">
+      <Filter>Crono\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Core\Core.h">
+      <Filter>Crono\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Core\Log.h">
+      <Filter>Crono\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Platform\Win32\WinIncludes.h">
+      <Filter>Crono\Platform\Win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Crono\Application\Application.cpp">
+      <Filter>Crono\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\Core\Log.cpp">
+      <Filter>Crono\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\Platform\Win32\Win32EntryPoint.cpp">
+      <Filter>Crono\Platform\Win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
