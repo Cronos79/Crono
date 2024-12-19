@@ -1,7 +1,8 @@
 // Copyright 2024 CronoGames
 #pragma once
-#include "Crono/Core/Core.h"
+#include "Crono/Core/Base.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Crono
 {

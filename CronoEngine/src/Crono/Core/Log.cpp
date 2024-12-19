@@ -1,4 +1,5 @@
 // Copyright 2024 Crono
+#include "crpch.h"
 #include "Log.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 

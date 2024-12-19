@@ -20,7 +20,7 @@ project "CronoEditor"
 
         includedirs
 	    {
-		    "src",
+		    "%{wks.location}/%{prj.name}/src",
             "%{wks.location}/CronoEngine/vendor/spdlog/include",
             "%{wks.location}/CronoEngine/src",
         }

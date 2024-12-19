@@ -1,6 +1,7 @@
 // Copyright 2024 CronoGames
+#include "crpch.h"
 #include "Application.h"
-#include <Crono/Core/Core.h>
+#include <Crono/Core/Base.h>
 
 namespace Crono
 {

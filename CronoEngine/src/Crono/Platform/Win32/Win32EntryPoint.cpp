@@ -1,6 +1,6 @@
 // Copyright 2024 CronoGames
+#include "crpch.h"
 #include "Crono/Application/Application.h"
-#include "WinIncludes.h"
 #include <Crono/Core/Log.h>
 
 /// <summary>

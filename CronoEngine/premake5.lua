@@ -7,6 +7,9 @@ project "CronoEngine"
         targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
 	    objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
+        pchheader "crpch.h"
+	    pchsource "src/crpch.cpp"
+
         files
         {
             "src/**.h",
@@ -20,7 +23,7 @@ project "CronoEngine"
 
         includedirs
 	    {
-		    "src",
+		    "%{wks.location}/%{prj.name}/src",
             "%{wks.location}/CronoEngine/vendor/spdlog/include"
         }
 

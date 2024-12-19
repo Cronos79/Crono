@@ -10,6 +10,9 @@
     <Filter Include="Crono\Core">
       <UniqueIdentifier>{FE5753AE-EA0F-95FB-5317-6E573FEE2FEC}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Crono\Events">
+      <UniqueIdentifier>{0A61AB95-F6C3-3A3A-9F49-73F08B8B06BD}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Crono\Platform">
       <UniqueIdentifier>{FAD225CA-E6A0-19D0-CF34-8AF6BBA1F534}</UniqueIdentifier>
     </Filter>
@@ -22,15 +25,34 @@
     <ClInclude Include="src\Crono\Application\Application.h">
       <Filter>Crono\Application</Filter>
     </ClInclude>
-    <ClInclude Include="src\Crono\Core\Core.h">
+    <ClInclude Include="src\Crono\Core\Base.h">
+      <Filter>Crono\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Core\KeyCodes.h">
       <Filter>Crono\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Crono\Core\Log.h">
       <Filter>Crono\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Crono\Platform\Win32\WinIncludes.h">
-      <Filter>Crono\Platform\Win32</Filter>
+    <ClInclude Include="src\Crono\Core\MouseCodes.h">
+      <Filter>Crono\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Crono\Core\PlatformDetection.h">
+      <Filter>Crono\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Events\ApplicationEvent.h">
+      <Filter>Crono\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Events\Event.h">
+      <Filter>Crono\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Events\KeyEvent.h">
+      <Filter>Crono\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\Events\MouseEvent.h">
+      <Filter>Crono\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Crono\Application\Application.cpp">
@@ -42,5 +64,6 @@
     <ClCompile Include="src\Crono\Platform\Win32\Win32EntryPoint.cpp">
       <Filter>Crono\Platform\Win32</Filter>
     </ClCompile>
+    <ClCompile Include="src\crpch.cpp" />
   </ItemGroup>
 </Project>
