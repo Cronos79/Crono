@@ -26,12 +26,14 @@ project "CronoEngine"
 		    "%{wks.location}/%{prj.name}/src",
             "%{wks.location}/CronoEngine/vendor/spdlog/include",
             "%{IncludeDir.GLFW}",
+            "%{IncludeDir.Glad}",
         }
 
         links
         {
             "glfw3.lib",
-            "opengl32.lib"
+            "opengl32.lib",
+            "Glad",
         }
 
         filter "system:windows"
@@ -52,6 +54,11 @@ project "CronoEngine"
 
             filter "configurations:Debug"            
             runtime "Debug"
+            buildoptions 
+            {
+                "/MDd",
+                "/utf-8"
+            }
             symbols "on"
 
             defines
@@ -67,6 +74,11 @@ project "CronoEngine"
 
             filter "configurations:Release"            
             runtime "Release"
+            buildoptions 
+            {
+                "/MD",
+                "/utf-8"
+            }
             optimize "on"
 
             defines
@@ -81,6 +93,11 @@ project "CronoEngine"
 
             filter "configurations:Ship"            
             runtime "Release"
+            buildoptions 
+            {
+                "/MD",
+                "/utf-8"
+            }
             optimize "on"
 
             defines

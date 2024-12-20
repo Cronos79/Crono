@@ -2,6 +2,7 @@
 #pragma once
 #include "../Core/Window.h"
 #include "../Events/ApplicationEvent.h"
+#include <Crono/Core/LayerStack.h>
 
 namespace Crono
 {
@@ -16,6 +17,7 @@ namespace Crono
 		/// Constructor.
 		/// </summary>
 		Application();
+
 		/// <summary>
 		/// Destructor.
 		/// </summary>
@@ -38,6 +40,18 @@ namespace Crono
 		/// <param name="e"></param>
 		void OnEvent(Event& e);
 
+		/// <summary>
+		/// Pushes a layer to the layer stack
+		/// </summary>
+		/// <param name="layer"></param>
+		void PushLayer(Layer* layer);
+
+		/// <summary>
+		/// Pushes an overlay to the layer stack
+		/// </summary>
+		/// <param name="layer"></param>
+		void PushOverlay(Layer* layer);
+
 	private:
 		/// <summary>
 		/// Close event
@@ -53,8 +67,20 @@ namespace Crono
 		bool OnWindowResize(WindowResizeEvent& e);
 
 	private:
+		/// <summary>
+		/// Window abstract class. Not Win32 specific.
+		/// </summary>
 		std::unique_ptr<Window> m_Window;
+
+		/// <summary>
+		/// Is the application still running?
+		/// </summary>
 		bool m_Running = true;
+
+		/// <summary>
+		/// The layer stack
+		/// </summary>
+		LayerStack m_LayerStack;
 	};
 }
 

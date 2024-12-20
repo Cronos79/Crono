@@ -18,6 +18,9 @@ workspace "Crono"
 		    "MultiProcessorCompile"
 	    }
 
+        group "Dependencies"
+            include "CronoEngine/vendor/Glad"
+
         group ""
 
         group "Editor"

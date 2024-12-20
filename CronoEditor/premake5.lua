@@ -46,6 +46,11 @@ project "CronoEditor"
 
             filter "configurations:Debug"            
             runtime "Debug"
+            buildoptions 
+            {
+                "/MDd",
+                "/utf-8"
+            }
             symbols "on"
 
             defines
@@ -61,6 +66,11 @@ project "CronoEditor"
 
             filter "configurations:Release"            
             runtime "Release"
+            buildoptions 
+            {
+                "/MD",
+                "/utf-8"
+            }
             optimize "on"
 
             defines
@@ -75,6 +85,11 @@ project "CronoEditor"
 
             filter "configurations:Ship"            
             runtime "Release"
+            buildoptions 
+            {
+                "/MD",
+                "/utf-8"
+            }
             optimize "on"
 
             defines

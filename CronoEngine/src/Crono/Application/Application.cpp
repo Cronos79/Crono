@@ -21,12 +21,18 @@ namespace Crono
 
 	void Application::Run()
 	{
-		float deltaTime = 0.0f;
+		Timestep deltaTime = 0.0f;
 		CR_INFO("Application starting");
 		while (m_Running)
 		{
 			glClearColor(1.0f, 0.1f, 0.1f, 1);
 			glClear(GL_COLOR_BUFFER_BIT);
+
+			for (Layer* layer : m_LayerStack)
+			{
+				layer->OnUpdate(deltaTime);
+			}
+
 			m_Window->OnUpdate();
 			Update(deltaTime);
 		}
@@ -41,12 +47,28 @@ namespace Crono
 		dispatcher.Dispatch<WindowCloseEvent>(CR_BIND_EVENT_FN(Application::OnWindowClose));
 		dispatcher.Dispatch<WindowResizeEvent>(CR_BIND_EVENT_FN(Application::OnWindowResize));
 
-	/*	for (auto it = m_LayerStack.rbegin(); it != m_LayerStack.rend(); ++it)
+		for (auto it = m_LayerStack.rbegin(); it != m_LayerStack.rend(); ++it)
 		{
 			if (e.Handled)
 				break;
 			(*it)->OnEvent(e);
-		}*/
+		}
+	}
+
+	void Application::PushLayer(Layer* layer)
+	{
+		//HZ_PROFILE_FUNCTION();
+
+		m_LayerStack.PushLayer(layer);
+		layer->OnAttach();
+	}
+
+	void Application::PushOverlay(Layer* layer)
+	{
+		//HZ_PROFILE_FUNCTION();
+
+		m_LayerStack.PushOverlay(layer);
+		layer->OnAttach();
 	}
 
 	bool Application::OnWindowClose(WindowCloseEvent& e)
