@@ -23,6 +23,11 @@ workspace "Crono"
             "_CRGLFW",
         }
 
+        includedirs
+	    {
+            "%{IncludeDir.glm}",
+        }
+
         group "Dependencies"
             include "CronoEngine/vendor/Glad"
 

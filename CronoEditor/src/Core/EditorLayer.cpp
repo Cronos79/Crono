@@ -1,5 +1,6 @@
 #include "EditorLayer.h"
 #include "imgui.h"
+#include "Platform/Glfw/GlfwInput.h"
 
 using namespace Crono;
 
@@ -23,7 +24,12 @@ namespace CEditor
 	{
 		ImGuiIO& io = ImGui::GetIO(); (void)io;
 		ImGui::Begin("FPS");
-		ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
+		ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);		
+		ImGui::End();
+
+		bool aPressed = GlfwInput::Get().IsKeyPressed(Crono::Key::A);
+		ImGui::Begin("Input");
+		ImGui::Text("A key pressed: %s", aPressed ? "true" : "false");
 		ImGui::End();
 	}
 } // namespace Crono

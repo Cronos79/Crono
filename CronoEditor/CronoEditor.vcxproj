@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_CRGLFW;_CRT_SECURE_NO_WARNINGS;_DEBUG;CR_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;..\CronoEngine\vendor\spdlog\include;..\CronoEngine\src\Crono\ImGui;..\CronoEngine\src;..\CronoEngine\vendor\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CronoEngine\vendor\glm;src;..\CronoEngine\vendor\spdlog\include;..\CronoEngine\src\Crono\ImGui;..\CronoEngine\src;..\CronoEngine\vendor\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -100,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_CRGLFW;_CRT_SECURE_NO_WARNINGS;CR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;..\CronoEngine\vendor\spdlog\include;..\CronoEngine\src\Crono\ImGui;..\CronoEngine\src;..\CronoEngine\vendor\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CronoEngine\vendor\glm;src;..\CronoEngine\vendor\spdlog\include;..\CronoEngine\src\Crono\ImGui;..\CronoEngine\src;..\CronoEngine\vendor\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -124,7 +124,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_CRGLFW;_CRT_SECURE_NO_WARNINGS;CR_SHIP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;..\CronoEngine\vendor\spdlog\include;..\CronoEngine\src\Crono\ImGui;..\CronoEngine\src;..\CronoEngine\vendor\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CronoEngine\vendor\glm;src;..\CronoEngine\vendor\spdlog\include;..\CronoEngine\src\Crono\ImGui;..\CronoEngine\src;..\CronoEngine\vendor\ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>

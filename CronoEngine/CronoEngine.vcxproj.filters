@@ -40,6 +40,9 @@
     <ClInclude Include="src\Crono\Core\Base.h">
       <Filter>Crono\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Crono\Core\Input.h">
+      <Filter>Crono\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Crono\Core\KeyCodes.h">
       <Filter>Crono\Core</Filter>
     </ClInclude>
@@ -170,6 +173,9 @@
       <Filter>Platform\Linux</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Win32\Win32EntryPoint.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Win32\Win32Input.cpp">
       <Filter>Platform\Win32</Filter>
     </ClCompile>
     <ClCompile Include="src\crpch.cpp" />
