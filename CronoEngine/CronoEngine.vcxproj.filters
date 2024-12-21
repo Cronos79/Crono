@@ -13,6 +13,9 @@
     <Filter Include="Crono\Events">
       <UniqueIdentifier>{0A61AB95-F6C3-3A3A-9F49-73F08B8B06BD}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Crono\ImGui">
+      <UniqueIdentifier>{901D2979-FCD2-A16E-85C7-9B45F17B9872}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
@@ -67,6 +70,39 @@
     <ClInclude Include="src\Crono\Events\MouseEvent.h">
       <Filter>Crono\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\ImGuiLayer.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imconfig.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imgui.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imgui_impl_glfw.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imgui_impl_opengl3.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imgui_impl_win32.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imgui_internal.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imstb_rectpack.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imstb_textedit.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crono\ImGui\imstb_truetype.h">
+      <Filter>Crono\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Win32\Win32Window.h">
       <Filter>Platform\Win32</Filter>
     </ClInclude>
@@ -87,6 +123,33 @@
     </ClCompile>
     <ClCompile Include="src\Crono\Core\Window.cpp">
       <Filter>Crono\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\ImGuiLayer.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui_demo.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui_draw.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui_impl_glfw.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui_impl_opengl3.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui_impl_win32.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui_tables.cpp">
+      <Filter>Crono\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crono\ImGui\imgui_widgets.cpp">
+      <Filter>Crono\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Linux\LinuxEntryPoint.cpp">
       <Filter>Platform\Linux</Filter>

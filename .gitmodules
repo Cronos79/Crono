@@ -4,3 +4,6 @@
 [submodule "CronoEngine/vendor/GLFW"]
 	path = CronoEngine/vendor/GLFW
 	url = https://github.com/glfw/glfw
+[submodule "CronoEngine/vendor/imgui"]
+	path = CronoEngine/vendor/imgui
+	url = https://github.com/ocornut/imgui

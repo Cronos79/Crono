@@ -18,7 +18,8 @@ project "CronoEngine"
 
         defines
         {
-            "_CRT_SECURE_NO_WARNINGS"
+            "_CRT_SECURE_NO_WARNINGS",
+            "GLFW_INCLUDE_NONE"
         }
 
         includedirs
@@ -27,6 +28,7 @@ project "CronoEngine"
             "%{wks.location}/CronoEngine/vendor/spdlog/include",
             "%{IncludeDir.GLFW}",
             "%{IncludeDir.Glad}",
+            "%{wks.location}/CronoEngine/src/Crono/ImGui",
         }
 
         links

@@ -22,14 +22,16 @@ project "CronoEditor"
 	    {
 		    "%{wks.location}/%{prj.name}/src",
             "%{wks.location}/CronoEngine/vendor/spdlog/include",
+            "%{wks.location}/CronoEngine/src/Crono/ImGui",
             "%{wks.location}/CronoEngine/src",
+            "%{IncludeDir.ImGui}",
         }
 
         links
         {
             "CronoEngine",
             "glfw3.lib",
-            "opengl32.lib"
+            "opengl32.lib",
         }
 
         filter "system:windows"

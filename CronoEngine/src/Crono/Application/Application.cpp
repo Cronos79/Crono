@@ -5,13 +5,22 @@
 #include <gl/GL.h>
 #include <Crono/Events/ApplicationEvent.h>
 #include "../Core/Log.h"
+#include <ImGuiLayer.h>
+#include "../Utils/PlatformUtils.h"
 
 namespace Crono
 {
+	Application* Application::s_Instance = nullptr;
+
 	Application::Application()
 	{
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(CR_BIND_EVENT_FN(Application::OnEvent));
+
+		s_Instance = this;
+
+		m_ImGuiLayer = new ImGuiLayer();
+		PushOverlay(m_ImGuiLayer);
 	}
 
 	Application::~Application()
@@ -21,8 +30,12 @@ namespace Crono
 
 	void Application::Run()
 	{
-		Timestep deltaTime = 0.0f;
+		float time = Time::GetTime();
+		Timestep deltaTime = time - m_LastFrameTime;
+		m_LastFrameTime = time;
+
 		CR_INFO("Application starting");
+		//ImGuiLayer imGuiLayer;
 		while (m_Running)
 		{
 			glClearColor(1.0f, 0.1f, 0.1f, 1);
@@ -32,9 +45,14 @@ namespace Crono
 			{
 				layer->OnUpdate(deltaTime);
 			}
-
+			m_ImGuiLayer->Begin();
+			for (Layer* layer : m_LayerStack)
+			{
+				layer->OnImGuiRender();
+			}
+			m_ImGuiLayer->End();
 			m_Window->OnUpdate();
-			Update(deltaTime);
+			
 		}
 	}
 

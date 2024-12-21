@@ -3,6 +3,7 @@
 #include "../Core/Window.h"
 #include "../Events/ApplicationEvent.h"
 #include <Crono/Core/LayerStack.h>
+#include "ImGuiLayer.h"
 
 namespace Crono
 {
@@ -26,13 +27,7 @@ namespace Crono
 		/// <summary>
 		/// Main game loop
 		/// </summary>
-		void Run();
-
-		/// <summary>
-		/// To be defined in CLIENT
-		/// </summary>
-		/// <param name="deltaTime">Time passed per frame</param>
-		virtual void Update(float deltaTime) = 0;
+		void Run();	
 
 		/// <summary>
 		/// Event handler
@@ -51,6 +46,24 @@ namespace Crono
 		/// </summary>
 		/// <param name="layer"></param>
 		void PushOverlay(Layer* layer);
+
+		/// <summary>
+		/// Gets this application object
+		/// </summary>
+		/// <returns></returns>
+		static Application& Get()
+		{
+			return *s_Instance;
+		}
+
+		/// <summary>
+		/// Gets the window
+		/// </summary>
+		/// <returns></returns>
+		Window& GetWindow()
+		{
+			return *m_Window;
+		}
 
 	private:
 		/// <summary>
@@ -81,6 +94,14 @@ namespace Crono
 		/// The layer stack
 		/// </summary>
 		LayerStack m_LayerStack;
+
+		/// <summary>
+		/// application object
+		/// </summary>
+		static Application* s_Instance;
+
+		ImGuiLayer* m_ImGuiLayer;
+		float m_LastFrameTime = 0.0f;
 	};
 }
 

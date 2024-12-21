@@ -1,7 +1,5 @@
 #pragma once
-
 #include "Crono/Core/Window.h"
-
 #include <GLFW/glfw3.h>
 
 namespace Crono

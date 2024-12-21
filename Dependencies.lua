@@ -2,7 +2,8 @@
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "%{wks.location}/CronoEngine/vendor/glfw/include"
-IncludeDir["Glad"] = "%{wks.location}/Hazel/vendor/Glad/include"
+IncludeDir["Glad"] = "%{wks.location}/CronoEngine/vendor/Glad/include"
+IncludeDir["ImGui"] = "%{wks.location}/CronoEngine/vendor/ImGui"
 
 LibraryDir = {}
 
