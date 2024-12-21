@@ -3,7 +3,11 @@
 #include "Crono/Application/Application.h"
 #include <Crono/Core/Log.h>
 
+/// <summary>
+/// This is for all Windows based applications. Even if the application uses GLFW.
+/// </summary>
 
+// Called in client
 extern Crono::Application* CreateApplication();
 
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)

@@ -1,6 +1,7 @@
 // Copyright 2024 CronoGames
 #pragma once
 #include "Crono.h"
+#include <Crono/Core/Window.h>
 
 namespace CEditor
 {
@@ -13,7 +14,7 @@ namespace CEditor
 		/// <summary>
 		/// Constructor and Destructor.
 		/// </summary>
-		EditorApp();
+		EditorApp(Crono::WindowProps props);
 		~EditorApp();
 
 	};

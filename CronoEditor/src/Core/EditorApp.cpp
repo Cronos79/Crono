@@ -5,7 +5,8 @@
 
 namespace CEditor
 {
-	EditorApp::EditorApp()
+	EditorApp::EditorApp(Crono::WindowProps props)
+		: Crono::Application(props)
 	{
 		PushLayer(new EditorLayer());
 	}
@@ -17,5 +18,9 @@ namespace CEditor
 
 Crono::Application* CreateApplication()
 {
-	return new CEditor::EditorApp();
+	Crono::WindowProps props = {};
+	props.Title = "Crono Editor";
+	props.Width = 1920;
+	props.Height = 1080;
+	return new CEditor::EditorApp(props);
 }

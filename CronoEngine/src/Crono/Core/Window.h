@@ -15,8 +15,8 @@ namespace Crono
 		uint32_t Height;
 
 		WindowProps(const std::string& title = "Crono Engine",
-			uint32_t width = 1920,
-			uint32_t height = 1080)
+			uint32_t width = 800,
+			uint32_t height = 600)
 			: Title(title), Width(width), Height(height)
 		{
 		}

@@ -12,9 +12,9 @@ namespace Crono
 {
 	Application* Application::s_Instance = nullptr;
 
-	Application::Application()
+	Application::Application(WindowProps props)
 	{
-		m_Window = std::unique_ptr<Window>(Window::Create());
+		m_Window = std::unique_ptr<Window>(Window::Create(props));
 		m_Window->SetEventCallback(CR_BIND_EVENT_FN(Application::OnEvent));
 
 		s_Instance = this;
