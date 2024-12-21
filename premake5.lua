@@ -18,6 +18,11 @@ workspace "Crono"
 		    "MultiProcessorCompile"
 	    }
 
+        defines
+        {
+            "_CRGLFW",
+        }
+
         group "Dependencies"
             include "CronoEngine/vendor/Glad"
 

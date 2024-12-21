@@ -16,8 +16,14 @@
     <Filter Include="Crono\ImGui">
       <UniqueIdentifier>{901D2979-FCD2-A16E-85C7-9B45F17B9872}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Crono\Utils">
+      <UniqueIdentifier>{C6A9067A-325F-7F6F-BB53-794627087673}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Glfw">
+      <UniqueIdentifier>{09199161-75D9-0C98-3E14-5615AA935174}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Linux">
       <UniqueIdentifier>{C9310D94-B5FF-009A-9E93-71C08A00DDFE}</UniqueIdentifier>
@@ -103,14 +109,13 @@
     <ClInclude Include="src\Crono\ImGui\imstb_truetype.h">
       <Filter>Crono\ImGui</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\Win32\Win32Window.h">
-      <Filter>Platform\Win32</Filter>
+    <ClInclude Include="src\Crono\Utils\PlatformUtils.h">
+      <Filter>Crono\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Glfw\GlfwWindow.h">
+      <Filter>Platform\Glfw</Filter>
     </ClInclude>
     <ClInclude Include="src\crpch.h" />
-    <ClInclude Include="src\Crono\Utils\PlatformUtils.h" />
-    <ClInclude Include="Input.h">
-      <Filter>Crono\Core</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Crono\Application\Application.cpp">
@@ -155,19 +160,18 @@
     <ClCompile Include="src\Crono\ImGui\imgui_widgets.cpp">
       <Filter>Crono\ImGui</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Glfw\GlfwPlatformUtils.cpp">
+      <Filter>Platform\Glfw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Glfw\GlfwWindow.cpp">
+      <Filter>Platform\Glfw</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Linux\LinuxEntryPoint.cpp">
       <Filter>Platform\Linux</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Win32\Win32EntryPoint.cpp">
       <Filter>Platform\Win32</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Win32\Win32Window.cpp">
-      <Filter>Platform\Win32</Filter>
-    </ClCompile>
     <ClCompile Include="src\crpch.cpp" />
-    <ClCompile Include="src\Platform\Win32\Win32PlatformUtils.cpp" />
-    <ClCompile Include="Win32Input.cpp">
-      <Filter>Platform\Win32</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

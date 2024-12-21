@@ -3,20 +3,9 @@
 #include "Crono/Application/Application.h"
 #include <Crono/Core/Log.h>
 
-/// <summary>
-/// Define this function in the CLIENT
-/// </summary>
-/// <returns>Application instance</returns>
+
 extern Crono::Application* CreateApplication();
 
-/// <summary>
-/// WinMain entry point
-/// </summary>
-/// <param name="hInstance">Windows param</param>
-/// <param name="hPrevInstance">Windows param</param>
-/// <param name="lpCmdLine">Windows param</param>
-/// <param name="nCmdShow">Windows param</param>
-/// <returns></returns>
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	Crono::Log::Init();
@@ -26,10 +15,7 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	return 0;
 }
 
-/// <summary>
-/// Called in debug for extra logging
-/// </summary>
-/// <returns></returns>
+
 int main()
 {
 	return WinMain(GetModuleHandle(NULL), NULL, GetCommandLineA(), SW_SHOW);

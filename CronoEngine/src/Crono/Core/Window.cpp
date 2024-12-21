@@ -2,8 +2,8 @@
 #include "crpch.h"
 #include "Window.h"
 
-#ifdef CR_PLATFORM_WINDOWS
-#include <Platform/Win32/Win32Window.h>
+#ifdef CR_PLATFORM_GLFW
+#include <Platform/Glfw/GlfwWindow.h>
 #endif
 
 
@@ -11,8 +11,8 @@ namespace Crono
 {
 	Scope<Window> Window::Create(const WindowProps& props)
 	{
-#ifdef CR_PLATFORM_WINDOWS
-		return CreateScope<Win32Window>(props);
+#ifdef CR_PLATFORM_GLFW
+		return CreateScope<GlfwWindow>(props);
 #else
 		//HZ_CORE_ASSERT(false, "Unknown platform!");
 		return nullptr;

@@ -1,5 +1,5 @@
 #include "crpch.h"
-#include "Win32Window.h"
+#include "GlfwWindow.h"
 
 //#include "Hazel/Core/Input.h"
 
@@ -24,21 +24,21 @@ namespace Crono
 		CR_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
 	}
 
-	Win32Window::Win32Window(const WindowProps& props)
+	GlfwWindow::GlfwWindow(const WindowProps& props)
 	{
 		//HZ_PROFILE_FUNCTION();
 
 		Init(props);
 	}
 
-	Win32Window::~Win32Window()
+	GlfwWindow::~GlfwWindow()
 	{
 		//HZ_PROFILE_FUNCTION();
 
 		Shutdown();
 	}
 
-	void Win32Window::Init(const WindowProps& props)
+	void GlfwWindow::Init(const WindowProps& props)
 	{
 		//HZ_PROFILE_FUNCTION();
 
@@ -167,7 +167,7 @@ namespace Crono
 			});
 	}
 
-	void Win32Window::Shutdown()
+	void GlfwWindow::Shutdown()
 	{
 		//HZ_PROFILE_FUNCTION();
 
@@ -180,7 +180,7 @@ namespace Crono
 		}
 	}
 
-	void Win32Window::OnUpdate()
+	void GlfwWindow::OnUpdate()
 	{
 		//HZ_PROFILE_FUNCTION();
 
@@ -189,7 +189,7 @@ namespace Crono
 		//m_Context->SwapBuffers();
 	}
 
-	void Win32Window::SetVSync(bool enabled)
+	void GlfwWindow::SetVSync(bool enabled)
 	{
 		//HZ_PROFILE_FUNCTION();
 
@@ -201,7 +201,7 @@ namespace Crono
 		m_Data.VSync = enabled;
 	}
 
-	bool Win32Window::IsVSync() const
+	bool GlfwWindow::IsVSync() const
 	{
 		return m_Data.VSync;
 	}

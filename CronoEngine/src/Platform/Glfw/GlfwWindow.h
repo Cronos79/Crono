@@ -5,11 +5,11 @@
 namespace Crono
 {
 
-	class Win32Window : public Window
+	class GlfwWindow : public Window
 	{
 	public:
-		Win32Window(const WindowProps& props);
-		virtual ~Win32Window();
+		GlfwWindow(const WindowProps& props);
+		virtual ~GlfwWindow();
 
 		void OnUpdate() override;
 

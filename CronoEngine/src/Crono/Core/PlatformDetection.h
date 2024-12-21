@@ -1,13 +1,9 @@
 // Platform detection using predefined macros
-#ifdef _WIN32
-	/* Windows x64/x86 */
-#ifdef _WIN64
+#ifdef _CRWIN64
 	/* Windows x64  */
 #define CR_PLATFORM_WINDOWS
-#else
-	/* Windows x86 */
-#error "x86 Builds are not supported!"
-#endif
+#elif defined(_CRGLFW)
+#define CR_PLATFORM_GLFW
 #elif defined(__APPLE__) || defined(__MACH__)
 #include <TargetConditionals.h>
 /* TARGET_OS_MAC exists on all the platforms
