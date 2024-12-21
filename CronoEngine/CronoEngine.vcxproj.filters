@@ -107,6 +107,10 @@
       <Filter>Platform\Win32</Filter>
     </ClInclude>
     <ClInclude Include="src\crpch.h" />
+    <ClInclude Include="src\Crono\Utils\PlatformUtils.h" />
+    <ClInclude Include="Input.h">
+      <Filter>Crono\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Crono\Application\Application.cpp">
@@ -161,5 +165,9 @@
       <Filter>Platform\Win32</Filter>
     </ClCompile>
     <ClCompile Include="src\crpch.cpp" />
+    <ClCompile Include="src\Platform\Win32\Win32PlatformUtils.cpp" />
+    <ClCompile Include="Win32Input.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

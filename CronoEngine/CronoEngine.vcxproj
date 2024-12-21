@@ -159,6 +159,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Input.h" />
     <ClInclude Include="src\Crono.h" />
     <ClInclude Include="src\Crono\Application\Application.h" />
     <ClInclude Include="src\Crono\Core\Base.h" />
@@ -211,6 +212,7 @@
     <ClCompile Include="src\crpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Win32Input.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\Glad\Glad.vcxproj">
